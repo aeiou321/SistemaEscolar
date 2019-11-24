@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style_nav.css" rel="stylesheet">
+
+    <style>
+        .content {
+            margin-top: 80px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs-block visible-sm-block" href="">Inicio</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a href="index.html">Login</a></li>
+                    <li class="active"><a href="registro.html">Registro</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+    </div>    </nav>
+    <div class="container">
+        <div class="content">
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif; background-image: url("img/fondo.png");  }
+
+/* Full-width input fields */
+input[type=text], input[type=password] , input[type=email]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 15%;
+    border-radius: 50%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+    <div class="imgcontainer">
+      <img src="img/registro.png" alt="Avatar" class="avatar">
+    </div>
+    <div style="margin-left:150px;">
+
+     <div class="container">
+  <form class="form-horizontal" action="registrar-usuario.php" method="post">
+      <label for="email">Número de Control</label><br>
+        <input type="text"  maxlength="20" placeholder="Ingresa tu Número de Control" name="username" required><br>
+      <label  for="pwd">Contraseña:</label><br>
+        <input type="password"  maxlength="30" id="pwd" placeholder="Ingresa una Contraseña" name="password" required><br>
+              <label  for="pwd">Semestre:</label><br>
+        <input type="text"  maxlength="30" id="pwd" placeholder="Ingresa tu Semestre" name="semestre" required><br>
+              <label  for="pwd">Nombre Completo:</label><br>
+        <input type="text"  maxlength="50" id="pwd" placeholder="Ingresa tu Nombre Completo" name="nombre" required><br>
+        <button type="submit" >Crear</button><br>
+        <button type="button" onclick="location.href='index.html'">Login</button>
+    </div>
+   <br>
+   <br>
+  </form>
+
+  
+</div>
+
+</body>
+</html>
